@@ -1,0 +1,25 @@
+{
+  "name": "templatejs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youben11/templatejs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youben11/templatejs/issues"
+  },
+  "homepage": "https://github.com/youben11/templatejs#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^9.1.4"
+  }
+}
