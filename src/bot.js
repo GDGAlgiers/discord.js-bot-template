@@ -1,7 +1,7 @@
 // Require the necessary discord.js classes
-const { Client, Collection, Intents } = require("discord.js");
-const { clientId, guildId, token } = require("../config.json");
-const { loadCommands } = require("./core/loader/index");
+const {Client, Collection, Intents} = require('discord.js');
+const {clientId, guildId, token} = require('../config.json');
+const {loadCommands} = require('./core/loader/index');
 
 // Create a new client instance
 const client = new Client({
@@ -13,11 +13,11 @@ client.commands = new Collection();
 loadCommands(client, token, clientId, guildId);
 
 // When the client is ready, run this code (only once)
-client.once("ready", () => {
-  console.log("Ready!");
+client.once('ready', () => {
+  console.log('Ready!');
 });
 
-client.on("interactionCreate", async (interaction) => {
+client.on('interactionCreate', async (interaction) => {
   if (!interaction.isCommand()) return;
 
   const command = client.commands.get(interaction.commandName);
@@ -30,7 +30,7 @@ client.on("interactionCreate", async (interaction) => {
   } catch (error) {
     console.error(error);
     await interaction.reply({
-      content: "There was an error while executing this command!",
+      content: 'There was an error while executing this command!',
       ephemeral: true,
     });
   }

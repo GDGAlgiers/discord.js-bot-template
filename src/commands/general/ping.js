@@ -1,30 +1,31 @@
-const discord = require("discord.js");
+const discord = require('discord.js');
+const {SlashCommandBuilder} = require('@discordjs/builders');
 
 module.exports = {
-  name: "ping",
-  description: "Get the bot's ping!",
-  options: null,
-  execute: async (client, interaction, args) => {
-    let start = Date.now();
+  data: new SlashCommandBuilder()
+      .setName('ping')
+      .setDescription('Get the bot\'s ping!'),
+  async execute(client, interaction, args) {
+    const start = Date.now();
 
-    let embed1 = new discord.MessageEmbed()
-      .setDescription("Looks like the bot is slow.")
-      .setColor("RANDOM");
+    const embed1 = new discord.MessageEmbed()
+        .setDescription('Looks like the bot is slow.')
+        .setColor('RANDOM');
 
     await interaction.reply({
       embeds: [embed1],
     });
 
-    let end = Date.now();
+    const end = Date.now();
 
-    let embed = new discord.MessageEmbed()
-      .setTitle("Ping!")
-      .addField("API Latency", `${Math.round(client.ws.ping)}ms`, true)
-      .addField("Message Latency", `${end - start}ms`, true)
-      .setColor("RANDOM");
+    const embed = new discord.MessageEmbed()
+        .setTitle('Ping!')
+        .addField('API Latency', `${Math.round(client.ws.ping)}ms`, true)
+        .addField('Message Latency', `${end - start}ms`, true)
+        .setColor('RANDOM');
 
     interaction
-      .editReply({ embeds: [embed] })
-      .catch((e) => interaction.followUp(e));
+        .editReply({embeds: [embed]})
+        .catch((e) => interaction.followUp(e));
   },
 };
