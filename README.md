@@ -1,7 +1,7 @@
 <img src="https://www.gdgalgiers.com/static/gdg_algiers-86a26a90b5a8da9cdd3127750215f051.png" alt="GDG LOGO" >
 <br>
 
-# TemplateJs
+# Description
 
 TemplateJs is an open source discord.js based bot template that will help you build a Discord bot in a quick and elegant way. It's Ultimate, efficient, easy-to-use and simple-to-setup Command handler for Discord bots, You just have to tweak few settings, add your commands, and you will be ready to go!
 
