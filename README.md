@@ -3,7 +3,7 @@
 
 # Description
 
-TemplateJs is an open source discord.js based bot template that will help you build a Discord bot in a quick and elegant way. It's Ultimate, efficient, easy-to-use and simple-to-setup Command handler for Discord bots, You just have to tweak few settings, add your commands, and you will be ready to go!
+TemplateJs is an open source discord.js based bot template that will help you build a Discord bot in a quick and elegant way. It's easy-to-use and simple-to-setup Command handler for Discord bots, You just have to tweak few settings, add your commands, and you will be ready to go!
 
 ## Requirements
 * ```git``` command line ([Windows](https://git-scm.com/download/win) | [Linux](https://git-scm.com/download/linux) | [MacOS](https://git-scm.com/download/mac)) installed
