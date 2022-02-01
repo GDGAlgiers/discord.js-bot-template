@@ -37,4 +37,4 @@ node src/bot.js
   ```
   
 ## Warning
-> :warning: Be careful, hide your config.json file from pushing your bot token !
+> :warning: Be careful, hide your config.json file from pushing your bot and server informations !
